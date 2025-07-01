@@ -66,6 +66,7 @@ export type MutationWorkflowOrderArgs = {
 
 export type Product = {
   __typename?: 'Product';
+  citest?: Maybe<Scalars['String']['output']>;
   description?: Maybe<Scalars['String']['output']>;
   id?: Maybe<Scalars['String']['output']>;
   name?: Maybe<Scalars['String']['output']>;
