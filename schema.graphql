@@ -13,7 +13,6 @@ type Cart {
   quantity: Int       # 商品の数量
 }
 
-# 変更テスト
 # データ取得系のクエリ（読み取り操作）
 type Query {
   product(id: String!): Product # 特定の商品をIDで取得（!は必須引数）
