@@ -11,7 +11,6 @@ type Cart {
   id: String          # カートID
   productId: String   # 商品ID（Productと紐づく）
   quantity: Int       # 商品の数量
-  cicd: Int
 }
 
 # データ取得系のクエリ（読み取り操作）
