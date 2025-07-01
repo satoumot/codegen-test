@@ -4,7 +4,6 @@ type Product {
   name: String       # 商品名
   price: Float       # 価格（例：1999.99）
   description: String # 商品の説明文
-  citest: String
 }
 
 # カート情報の型定義
