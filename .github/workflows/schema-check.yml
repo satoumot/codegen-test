@@ -3,7 +3,7 @@ name: 'GraphQL: Check for Breaking Changes'
 
 # 実行されるタイミングを定義
 on:
-  pull_request:
+  push:
     branches: [ main ]
     # スキーマファイルが変更された場合のみ実行
     paths:

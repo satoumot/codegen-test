@@ -1,6 +1,6 @@
 name: 'GraphQL: Verify Generated Code'
 on:
-  pull_request:
+  push:
     branches: [ main ]
     paths:
       - '**/schema.graphql'
