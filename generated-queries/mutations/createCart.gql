@@ -1,0 +1,3 @@
+mutation createCart($id: String!, $productId: String!, $quantity: Int!){
+    createCart(id: $id, productId: $productId, quantity: $quantity)
+}

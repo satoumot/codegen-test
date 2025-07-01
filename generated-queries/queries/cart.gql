@@ -1,0 +1,7 @@
+query cart($id: String!){
+    cart(id: $id){
+        id
+        productId
+        quantity
+    }
+}

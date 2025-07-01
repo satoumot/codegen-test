@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "service": "MyGrpcPluginService",
+  "operationMappings": [
+    {
+      "type": "OPERATION_TYPE_QUERY",
+      "original": "product",
+      "mapped": "QueryProduct",
+      "request": "QueryProductRequest",
+      "response": "QueryProductResponse"
+    },
+    {
+      "type": "OPERATION_TYPE_QUERY",
+      "original": "cart",
+      "mapped": "QueryCart",
+      "request": "QueryCartRequest",
+      "response": "QueryCartResponse"
+    },
+    {
+      "type": "OPERATION_TYPE_MUTATION",
+      "original": "createCart",
+      "mapped": "MutationCreateCart",
+      "request": "MutationCreateCartRequest",
+      "response": "MutationCreateCartResponse"
+    },
+    {
+      "type": "OPERATION_TYPE_MUTATION",
+      "original": "placeOrder",
+      "mapped": "MutationPlaceOrder",
+      "request": "MutationPlaceOrderRequest",
+      "response": "MutationPlaceOrderResponse"
+    },
+    {
+      "type": "OPERATION_TYPE_MUTATION",
+      "original": "refundOrder",
+      "mapped": "MutationRefundOrder",
+      "request": "MutationRefundOrderRequest",
+      "response": "MutationRefundOrderResponse"
+    },
+    {
+      "type": "OPERATION_TYPE_MUTATION",
+      "original": "payOrder",
+      "mapped": "MutationPayOrder",
+      "request": "MutationPayOrderRequest",
+      "response": "MutationPayOrderResponse"
+    },
+    {
+      "type": "OPERATION_TYPE_MUTATION",
+      "original": "workflowOrder",
+      "mapped": "MutationWorkflowOrder",
+      "request": "MutationWorkflowOrderRequest",
+      "response": "MutationWorkflowOrderResponse"
+    }
+  ],
+  "entityMappings": [],
+  "typeFieldMappings": [
+    {
+      "type": "Query",
+      "fieldMappings": [
+        {
+          "original": "product",
+          "mapped": "product",
+          "argumentMappings": [
+            {
+              "original": "id",
+              "mapped": "id"
+            }
+          ]
+        },
+        {
+          "original": "cart",
+          "mapped": "cart",
+          "argumentMappings": [
+            {
+              "original": "id",
+              "mapped": "id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Mutation",
+      "fieldMappings": [
+        {
+          "original": "createCart",
+          "mapped": "create_cart",
+          "argumentMappings": [
+            {
+              "original": "id",
+              "mapped": "id"
+            },
+            {
+              "original": "productId",
+              "mapped": "product_id"
+            },
+            {
+              "original": "quantity",
+              "mapped": "quantity"
+            }
+          ]
+        },
+        {
+          "original": "placeOrder",
+          "mapped": "place_order",
+          "argumentMappings": [
+            {
+              "original": "id",
+              "mapped": "id"
+            },
+            {
+              "original": "itemId",
+              "mapped": "item_id"
+            },
+            {
+              "original": "quantity",
+              "mapped": "quantity"
+            }
+          ]
+        },
+        {
+          "original": "refundOrder",
+          "mapped": "refund_order",
+          "argumentMappings": [
+            {
+              "original": "orderId",
+              "mapped": "order_id"
+            }
+          ]
+        },
+        {
+          "original": "payOrder",
+          "mapped": "pay_order",
+          "argumentMappings": [
+            {
+              "original": "orderId",
+              "mapped": "order_id"
+            },
+            {
+              "original": "amount",
+              "mapped": "amount"
+            }
+          ]
+        },
+        {
+          "original": "workflowOrder",
+          "mapped": "workflow_order",
+          "argumentMappings": [
+            {
+              "original": "orderId",
+              "mapped": "order_id"
+            },
+            {
+              "original": "itemId",
+              "mapped": "item_id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Product",
+      "fieldMappings": [
+        {
+          "original": "id",
+          "mapped": "id",
+          "argumentMappings": []
+        },
+        {
+          "original": "name",
+          "mapped": "name",
+          "argumentMappings": []
+        },
+        {
+          "original": "price",
+          "mapped": "price",
+          "argumentMappings": []
+        },
+        {
+          "original": "description",
+          "mapped": "description",
+          "argumentMappings": []
+        }
+      ]
+    },
+    {
+      "type": "Cart",
+      "fieldMappings": [
+        {
+          "original": "id",
+          "mapped": "id",
+          "argumentMappings": []
+        },
+        {
+          "original": "productId",
+          "mapped": "product_id",
+          "argumentMappings": []
+        },
+        {
+          "original": "quantity",
+          "mapped": "quantity",
+          "argumentMappings": []
+        }
+      ]
+    }
+  ],
+  "enumMappings": []
+}

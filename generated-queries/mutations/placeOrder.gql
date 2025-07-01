@@ -1,0 +1,3 @@
+mutation placeOrder($id: String!, $itemId: String!, $quantity: Int!){
+    placeOrder(id: $id, itemId: $itemId, quantity: $quantity)
+}

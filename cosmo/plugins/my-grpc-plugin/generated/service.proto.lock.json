@@ -1,0 +1,177 @@
+{
+  "version": "1.0.0",
+  "messages": {
+    "Query": {
+      "fields": {
+        "product": 2,
+        "cart": 3
+      },
+      "reservedNumbers": [
+        1
+      ]
+    },
+    "QueryHello": {
+      "fields": {
+        "name": 1
+      }
+    },
+    "QueryHelloRequest": {
+      "fields": {
+        "name": 1
+      }
+    },
+    "QueryHelloResponse": {
+      "fields": {
+        "hello": 1
+      }
+    },
+    "World": {
+      "fields": {
+        "id": 1,
+        "name": 2
+      }
+    },
+    "QueryProduct": {
+      "fields": {
+        "id": 1
+      }
+    },
+    "QueryProductRequest": {
+      "fields": {
+        "id": 1
+      }
+    },
+    "QueryProductResponse": {
+      "fields": {
+        "product": 1
+      }
+    },
+    "QueryCart": {
+      "fields": {
+        "id": 1
+      }
+    },
+    "QueryCartRequest": {
+      "fields": {
+        "id": 1
+      }
+    },
+    "QueryCartResponse": {
+      "fields": {
+        "cart": 1
+      }
+    },
+    "Mutation": {
+      "fields": {
+        "createCart": 1,
+        "placeOrder": 2,
+        "refundOrder": 3,
+        "payOrder": 4,
+        "workflowOrder": 5
+      }
+    },
+    "MutationCreateCart": {
+      "fields": {
+        "id": 1,
+        "productId": 2,
+        "quantity": 3
+      }
+    },
+    "MutationCreateCartRequest": {
+      "fields": {
+        "id": 1,
+        "product_id": 2,
+        "quantity": 3
+      }
+    },
+    "MutationCreateCartResponse": {
+      "fields": {
+        "create_cart": 1
+      }
+    },
+    "MutationPlaceOrder": {
+      "fields": {
+        "id": 1,
+        "itemId": 2,
+        "quantity": 3
+      }
+    },
+    "MutationPlaceOrderRequest": {
+      "fields": {
+        "id": 1,
+        "item_id": 2,
+        "quantity": 3
+      }
+    },
+    "MutationPlaceOrderResponse": {
+      "fields": {
+        "place_order": 1
+      }
+    },
+    "MutationRefundOrder": {
+      "fields": {
+        "orderId": 1
+      }
+    },
+    "MutationRefundOrderRequest": {
+      "fields": {
+        "order_id": 1
+      }
+    },
+    "MutationRefundOrderResponse": {
+      "fields": {
+        "refund_order": 1
+      }
+    },
+    "MutationPayOrder": {
+      "fields": {
+        "orderId": 1,
+        "amount": 2
+      }
+    },
+    "MutationPayOrderRequest": {
+      "fields": {
+        "order_id": 1,
+        "amount": 2
+      }
+    },
+    "MutationPayOrderResponse": {
+      "fields": {
+        "pay_order": 1
+      }
+    },
+    "MutationWorkflowOrder": {
+      "fields": {
+        "orderId": 1,
+        "itemId": 2
+      }
+    },
+    "MutationWorkflowOrderRequest": {
+      "fields": {
+        "order_id": 1,
+        "item_id": 2
+      }
+    },
+    "MutationWorkflowOrderResponse": {
+      "fields": {
+        "workflow_order": 1
+      }
+    },
+    "Product": {
+      "fields": {
+        "id": 1,
+        "name": 2,
+        "price": 3,
+        "description": 4
+      }
+    },
+    "Cart": {
+      "fields": {
+        "id": 1,
+        "productId": 2,
+        "quantity": 3
+      }
+    }
+  },
+  "enums": {}
+}

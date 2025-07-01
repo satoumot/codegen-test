@@ -1,0 +1,3 @@
+mutation payOrder($orderId: String!, $amount: Int!){
+    payOrder(orderId: $orderId, amount: $amount)
+}

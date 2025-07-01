@@ -1,0 +1,7 @@
+# .graphqlrc.yml
+
+# スキーマファイルのパスを指定
+schema: "schema.graphql"
+
+# クエリを記述するファイルのパスを指定（複数指定も可能）
+documents: "operations.graphql"
