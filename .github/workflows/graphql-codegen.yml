@@ -2,10 +2,10 @@ name: 'GraphQL: Verify Generated Code'
 on:
   push:
     branches: [ main ]
-    paths:
-      - '**/schema.graphql'
-      - '**/*.graphql'
-      - 'codegen.ts'
+    # paths:
+    #   - '**/schema.graphql'
+    #   - '**/*.graphql'
+    #   - 'codegen.ts'
 jobs:
   verify-codegen:
     name: Verify Codegen Freshness
